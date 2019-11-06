@@ -1,0 +1,250 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+    
+    <div class="parallax-container hero-banner valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="hide-on-med-and-down">
+                    <h1 class="header center white-text light">Progressez grâce à notre meilleur coach de Rocket League</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Grand Champion, Top 100, Pédagogue, Suivi de cours...</h5>
+                    </div>
+                </div>
+                <div class="hide-on-large-only">
+                    <div class="row center">
+                        <h5 class="header col s12 light">Progressez grâce à notre meilleur coach de Rocket League</h5>
+                    </div>
+                </div>
+                {# <div class="row">
+                                                                    <div class="card col s12 m12 l8 offset-l2">
+                                                                        <div class="card-content">
+                                                                            <div class="input-field col s12 l8">
+                                                                                <input id="cag_name" type="text" class="validate">
+                                                                                <label for="cag_name">Nommez votre nouvelle campagne</label>
+                                                                            </div>
+                                                                            <a href="#" class="btn-large waves-effect waves-light btn-primary lighten-1 col s12 l4">Valider</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> #}
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img class="imgParalax" src=" {{ asset('../public/assets/images/entree.jpg') }}" alt="Octone s'appretant à entrée dans le terrain"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 center">
+                    <h4>Comment ça marche ?</h4>
+                </div>
+            </div>
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4 pushItDown">
+                    <div class="icon-block center">
+                        <div class="btn-large btn-floating white">
+                            <i class="material-icons teal-text">person_add</i>
+                        </div>
+                        <h5 class="center">Inscrivez-vous</h5>
+                        <p class="light">et rejoigner ma communauté Rocket League de plus de 300 membres !</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 pushItDown">
+                    <div class="icon-block center">
+                        <div class="btn-large btn-floating white">
+                            <i class="material-icons teal-text">check_box</i>
+                        </div>
+                        <h5 class="center">Réservez</h5>
+                        <p class="light">votre premiere heure de cours et bénéficier d'une heure offerte !
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4 pushItDown">
+                    <div class="icon-block center">
+                        <div class="btn-large btn-floating white">
+                            <i class="material-icons teal-text">trending_up</i>
+                        </div>
+                        <h5 class="center">Gagnez</h5>
+                        <p class="light">vos futurs games et monter dans le leader !</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h4 class="header col s12 light">Des cours pensés pour vous<br>et pour vos coéquipiers</h4>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img class="imgParalax" src="{{ asset('../public/assets/images/ballon.jpg') }}" alt="Une campagne pensée pour vous"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h4>les derniers avis</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!">
+                            <div class="card center">
+                                <div class="card-content">
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <span class="card-title teal-text">SmX</span>
+                                    <p class="black-text">Déjà la 3è heure de cours avec ImaginaXion.
+                                                                                                                                                                                                                                                                                        Toujours rien à redire, très bons conseils, on ressort forcément avec des choses à travailler, et la progression commence immédiatement !
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <div class="row black-text">
+                                        <div class="col s6">
+                                            <img class="icon-rank" src="assets/images/Rank/3.png" alt="League Champion 1 sur Rocket League">
+                                        </div>
+                                        <div class="col s6">
+                                            <i class="material-icons teal-text"></i>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#two!">
+                            <div class="card center">
+                                <div class="card-content">
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <span class="card-title teal-text">PndaRL</span>
+                                    <p class="black-text">Une certaine appréhension après la découverte de coach sur RL, j’ai testé et je ne regrette pas.
+                                                                                                                        
+                                                                                                                        Personne talentueuse, énormément sympathique et fort patient. Ses cours sont juste précis sur les défauts, les entraînements propre à sois même.. le top, je vois le jeu différemment ..
+                                                                                                                        
+                                                                                                                        Je ne pouvais pas tomber mieux ! Vivement les prochains cours !</p>
+                                </div>
+                                <div class="card-action">
+                                    <div class="row black-text">
+                                        <div class="col s6">
+                                            <img class="icon-rank" src="assets/images/Rank/5.png" alt="League Champion 1 sur Rocket League">
+                                        </div>
+                                        <div class="col s6">
+                                            <i class="material-icons teal-text"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#three!">
+                            <div class="card center">
+                                <div class="card-content">
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <span class="card-title teal-text">Zetiix</span>
+                                    <p class="black-text">Je prends maintenant des cours avec ImaginaXion depuis un moment et mon amélioration est flagrante je suis passé de GOLD II a Diamant II. Après chaque cours que j'ai fait j'ai sentit une amélioration. Après chaque cours je me focalisais sur ce qu'il m'avait dit et ça se débloquait. Même si sa devient de plus en plus compliqué de s'améliorer et d'essayer de débloquer ce qu'on a travaillé pendant un cours, ImaginaXion nous aides à y arriver avec des réponse rapide si on a des questions MEME en dehors des cours !
+                                                                                                                                                                                                                                                Je vous le conseille vivement !</p>
+                                </div>
+                                <div class="card-action">
+                                    <div class="row black-text">
+                                        <div class="col s6">
+                                            <img class="icon-rank" src="assets/images/Rank/3.png" alt="League Champion 1 sur Rocket League">
+
+                                        </div>
+                                        <div class="col s6">
+                                            <i class="material-icons teal-text"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#four!">
+                            <div class="card center">
+                                <div class="card-content">
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <span class="card-title teal-text">Awake</span>
+                                    <p class="black-text">Premier cours de 2 heures 30 d'une grande qualité. Nous avons mes principales faiblesses et nous avons exécuté des exercices pratiques par la suite pour pouvoir travailler la matière. Nous avons ensuite fini sur un petit en 2v2 ou j'ai pu essayé de remettre ce que nous avons vu.
+                                                                                                                                                                                                                                                C'est une personne très pro qui n'hésite pas à finir ce qu'elle doit finir, nous avons en effet débordé de 30 minutes et pour la fin le coach nous donne les trainings adapté pour pouvoir progresser avec aussi un compte rendu très complet !
+                                                                                                                                                                                                                                                Je le recommande vivement !
+                                    </p>
+                                </div>
+                                <div class="card-action">
+                                    <div class="row black-text">
+                                        <div class="col s6">
+                                            <img class="icon-rank" src="assets/images/Rank/2.png" alt="League Champion 1 sur Rocket League">
+
+                                        </div>
+                                        <div class="col s6">
+                                            <i class="material-icons teal-text"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="carousel-item" href="#five!">
+                            <div class="card center">
+                                <div class="card-content">
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <i class="material-icons primary">star</i>
+                                    <span class="card-title teal-text">Dalfy</span>
+                                    <p class="black-text">Toujours au top, première tentative d'un cours pour 3 personnes en même temps. Des nouveaux aspects intéressants à développer et une bonne petite communauté qui se forme et permet d'avoir des adversaires en face pendant le cours !</p>
+                                </div>
+                                <div class="card-action">
+                                    <div class="row black-text">
+                                        <div class="col s6">
+                                            <img class="icon-rank" src="assets/images/Rank/1.png" alt="League Champion 1 sur Rocket League">
+
+                                        </div>
+                                        <div class="col s6">
+                                            <i class="material-icons teal-text"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
