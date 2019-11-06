@@ -4,8 +4,6 @@
 {% endblock %}
 
 {% block body %}
-
-    
     <div class="parallax-container hero-banner valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
@@ -20,22 +18,26 @@
                         <h5 class="header col s12 light">Progressez grâce à notre meilleur coach de Rocket League</h5>
                     </div>
                 </div>
-                {# <div class="row">
-                                                                    <div class="card col s12 m12 l8 offset-l2">
-                                                                        <div class="card-content">
-                                                                            <div class="input-field col s12 l8">
-                                                                                <input id="cag_name" type="text" class="validate">
-                                                                                <label for="cag_name">Nommez votre nouvelle campagne</label>
-                                                                            </div>
-                                                                            <a href="#" class="btn-large waves-effect waves-light btn-primary lighten-1 col s12 l4">Valider</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div> #}
+                <div class="row">
+                    <div class="card col s12 m12 l8 offset-l2">
+                        <div class="card-content">
+                            <div class="input-field col s12 l8">
+                                <form action='{{path('user_new')}}' method='POST'>
+                                    <label for="pseudo">Votre pseudo</label>
+                                    <input name="pseudo" id="pseudo" type="text" class="validate">
+                                </div>
+                                <button type='submit' class="btn-large waves-effect waves-light btn-primary lighten-1 col s12 l4">Inscription gratuite</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <br><br>
 
             </div>
         </div>
-        <div class="parallax"><img class="imgParalax" src=" {{ asset('../public/assets/images/entree.jpg') }}" alt="Octone s'appretant à entrée dans le terrain"></div>
+        <div class="parallax">
+            <img class="imgIndexParalax" src=" {{ asset('../public/assets/images/entree.jpg') }}" alt="Octone s'appretant à entrée dans le terrain">
+        </div>
     </div>
 
     <div class="container">
@@ -90,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img class="imgParalax" src="{{ asset('../public/assets/images/ballon.jpg') }}" alt="Une campagne pensée pour vous"></div>
+        <div class="parallax"><img class="imgIndexParalax" src="{{ asset('../public/assets/images/ballon.jpg') }}" alt="Une campagne pensée pour vous"></div>
     </div>
 
     <div class="container">
@@ -114,7 +116,7 @@
                                     <i class="material-icons primary">star</i>
                                     <span class="card-title teal-text">SmX</span>
                                     <p class="black-text">Déjà la 3è heure de cours avec ImaginaXion.
-                                                                                                                                                                                                                                                                                        Toujours rien à redire, très bons conseils, on ressort forcément avec des choses à travailler, et la progression commence immédiatement !
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Toujours rien à redire, très bons conseils, on ressort forcément avec des choses à travailler, et la progression commence immédiatement !
                                     </p>
                                 </div>
                                 <div class="card-action">
@@ -142,10 +144,10 @@
                                     <i class="material-icons primary">star</i>
                                     <span class="card-title teal-text">PndaRL</span>
                                     <p class="black-text">Une certaine appréhension après la découverte de coach sur RL, j’ai testé et je ne regrette pas.
-                                                                                                                        
-                                                                                                                        Personne talentueuse, énormément sympathique et fort patient. Ses cours sont juste précis sur les défauts, les entraînements propre à sois même.. le top, je vois le jeu différemment ..
-                                                                                                                        
-                                                                                                                        Je ne pouvais pas tomber mieux ! Vivement les prochains cours !</p>
+                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                Personne talentueuse, énormément sympathique et fort patient. Ses cours sont juste précis sur les défauts, les entraînements propre à sois même.. le top, je vois le jeu différemment ..
+                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                Je ne pouvais pas tomber mieux ! Vivement les prochains cours !</p>
                                 </div>
                                 <div class="card-action">
                                     <div class="row black-text">
@@ -171,7 +173,7 @@
                                     <i class="material-icons primary">star</i>
                                     <span class="card-title teal-text">Zetiix</span>
                                     <p class="black-text">Je prends maintenant des cours avec ImaginaXion depuis un moment et mon amélioration est flagrante je suis passé de GOLD II a Diamant II. Après chaque cours que j'ai fait j'ai sentit une amélioration. Après chaque cours je me focalisais sur ce qu'il m'avait dit et ça se débloquait. Même si sa devient de plus en plus compliqué de s'améliorer et d'essayer de débloquer ce qu'on a travaillé pendant un cours, ImaginaXion nous aides à y arriver avec des réponse rapide si on a des questions MEME en dehors des cours !
-                                                                                                                                                                                                                                                Je vous le conseille vivement !</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        Je vous le conseille vivement !</p>
                                 </div>
                                 <div class="card-action">
                                     <div class="row black-text">
@@ -198,8 +200,8 @@
                                     <i class="material-icons primary">star</i>
                                     <span class="card-title teal-text">Awake</span>
                                     <p class="black-text">Premier cours de 2 heures 30 d'une grande qualité. Nous avons mes principales faiblesses et nous avons exécuté des exercices pratiques par la suite pour pouvoir travailler la matière. Nous avons ensuite fini sur un petit en 2v2 ou j'ai pu essayé de remettre ce que nous avons vu.
-                                                                                                                                                                                                                                                C'est une personne très pro qui n'hésite pas à finir ce qu'elle doit finir, nous avons en effet débordé de 30 minutes et pour la fin le coach nous donne les trainings adapté pour pouvoir progresser avec aussi un compte rendu très complet !
-                                                                                                                                                                                                                                                Je le recommande vivement !
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        C'est une personne très pro qui n'hésite pas à finir ce qu'elle doit finir, nous avons en effet débordé de 30 minutes et pour la fin le coach nous donne les trainings adapté pour pouvoir progresser avec aussi un compte rendu très complet !
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        Je le recommande vivement !
                                     </p>
                                 </div>
                                 <div class="card-action">

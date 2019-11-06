@@ -1,0 +1,50 @@
+{{ form_start(form) }}
+<div class="row">
+
+    <div class="input-field col s12 l12">
+        {{ form_widget(form.pseudo, {'value' : pseudo }) }}
+        {{ form_label(form.pseudo) }}
+    </div>
+    <div class="input-field col s12 l6">
+        {{ form_widget(form.password.first) }}
+        {{ form_label(form.password.first) }}
+    </div>
+     <div class="input-field col s12 l6">
+        {{ form_widget(form.password.second) }}
+        {{ form_label(form.password.second) }}
+
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_widget(form.email) }}
+        {{ form_label(form.email) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_widget(form.age) }}
+        {{ form_label(form.age) }}
+    </div>
+    <div class="input-field col s12 l6">
+        {{ form_widget(form.rang1v1) }}
+        {{ form_label(form.rang1v1) }}
+    </div>
+    <div class="input-field col s12 l6">
+        {{ form_widget(form.rang2v2) }}
+        {{ form_label(form.rang2v2) }}
+    </div>
+    <div class="input-field col s12 l6">
+        {{ form_widget(form.rang3v3solo) }}
+        {{ form_label(form.rang3v3solo) }}
+    </div>
+    <div class="input-field col s12 l6">
+        {{ form_widget(form.rang3v3team) }}
+        {{ form_label(form.rang3v3team) }}
+    </div>
+    <div class="input-field col s12 l12">
+        {{ form_widget(form.nbHeures) }}
+        {{ form_label(form.nbHeures) }}
+    </div>
+</div>
+
+<div class="center">
+      <button class="waves-effect waves-light btn btn-primary lighten-1">{{ button_label|default('Confirmer et m\'inscrire') }}</button>
+</div>
+{{ form_end(form) }}
