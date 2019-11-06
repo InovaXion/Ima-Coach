@@ -3,11 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -60,7 +61,9 @@ class User
      * @ORM\Column(type="integer", nullable=true)
      */
     private $nbHeures;
-
+    
+    // TO DO //
+    // Ajoutez les roles, terminer le bundle security !! // 
   
 
     public function getId(): ?int
@@ -174,5 +177,38 @@ class User
         $this->nbHeures = $nbHeures;
 
         return $this;
+    }
+
+    public function __toString() {
+        if(is_null($this->pseudo)) {
+            return 'NULL';
+        }
+        return $this->pseudo;
+    }
+
+    public function eraseCredentials()
+    { }
+
+    public function getRoles(): array
+    {
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    public function getSalt()
+    { }
+
+    public function setRoles(array $roles): self
+    {
+        $this->roles = $roles;
+
+        return $this;
+    }
+    public function getUsername()
+    {
+        return $this->pseudo;
     }
 }
