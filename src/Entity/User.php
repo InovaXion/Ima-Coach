@@ -58,6 +58,13 @@ class User implements UserInterface
      * @ORM\Column(type="integer", nullable=true)
      */
     private $nbHeures;
+
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = [
+        "ROLE_USER",
+    ];
     
     // TO DO //
     // Ajoutez les roles, terminer le bundle security !! // 

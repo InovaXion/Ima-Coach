@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!
+{% endblock %}
+
+{% block body %}
+<div class="parallax-container hero-banner valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="hide-on-med-and-down">
+                    <h1 class="header center white-text light">Connexion</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Devenez la prochaine étoile montante du Leader !</h5>
+                    </div>
+                </div>
+                <div class="hide-on-large-only">
+                    <h1 class="header center white-text light">Connexion</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Devenez la prochaine étoile montante du Leader !</h5>
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax">
+            <img class="imgInscripParalax" src=" {{ asset('../public/assets/images/test.png') }}" alt="Octone s'appretant à entrée dans le terrain">
+        </div>
+    </div>
+
+    <div class="parallax-container hero-banner valign-wrapper">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 center">
+                    </div>
+                </div>
+                <div class="card card-new-user">
+                    <div class="card-content">
+                        {% if app.user %}
+                            <div class="">
+
+                                Vous êtes déjà connecté en tant que
+                                {{ app.user.username }}
+                                <form action='{{ path('app_logout') }}'>
+                                    <button type='submit' class="waves-effect waves-light btn btn-primary lighten-1">Vous êtes déjà connecté</button>
+                                </div>
+                            </form>
+                        {% else %}
+                            <form method="post">
+                                {% if error %}
+                                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                {% endif %}
+
+
+                                <div class="input-field col s12 l12">
+                                    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+                                    <label for="inputEmail" class="required">Email</label>
+                                    <span class="form-error"></span>
+                                </div>
+                                <div class="input-field col s12 l12">
+                                    <input type="password" name="password" id="inputPassword" class="form-control" required>
+                                    <label for="inputPassword" class="required">Password</label>
+                                    <span class="form-error"></span>
+                                </div>
+                                <input
+                                type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                                {#
+                                                                                                                                                        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                                                                                                                                                        See https://symfony.com/doc/current/security/remember_me.html
+                                                                                                                                                        <div class="checkbox mb-3">
+                                                                                                                                                        <label>
+                                                                                                                                                        <input type="checkbox" name="_remember_me"> Remember me
+                                                                                                                                                        </label>
+                                                                                                                                                        </div>
+                                                                                                                                                        #}
+                                <div class="center">
+                                    <button class="btn btn-lg btn-primary" type="submit">
+                                        Sign in
+                                    </button>
+                                </div>
+                            </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+{% endblock %}

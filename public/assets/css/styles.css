@@ -7,142 +7,162 @@
  * Made By MaterializeCSS.com
  */
 
-
 p {
-    line-height: 2rem;
-}
-
-
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255, 255, 255, .9);
-}
-
-.parallax-container .section {
-    width: 100%;
-}
-
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
+  line-height: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
+  #index-banner .section {
+    top: 0;
+  }
 }
 
 .icon-block {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
-
 .primary {
-    color: #002773!important;
+  color: #002773 !important;
 }
 
 .black-text {
-    max-height: 150px !important;
-    overflow: hidden;
+  max-height: 150px !important;
+  overflow: hidden;
 }
 
 .icon-rank {
-    width: 45px;
-    border: solid 1px black;
-    background-color: #002773;
-    position: absolute;
-    left: 15px;
-    top: 5px;
+  width: 45px;
+  border: solid 1px black;
+  background-color: #002773;
+  position: absolute;
+  left: 15px;
+  top: 5px;
 }
 
 .icon-rank2 {
-    width: 45px;
-    border: solid 1px black;
-    background-color: #002773;
-    position: absolute;
+  width: 45px;
+  border: solid 1px black;
+  background-color: #002773;
+  position: absolute;
 }
 
-
-.indicator{
-    top: 100px!important
+.indicator {
+  top: 100px !important;
 }
 
-.rankUp{
-    display : flex;
-    justify-content: space-between;
+.rankUp {
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel .indicators {
-    position: absolute;
-    text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-}
-
-.imgIndexParalax{
-    top: -750px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
 }
 
 /**/
 
-.parallax-container.hero-banner {
-    min-height: 480px;
-}
-
-.participe .card-content, .parallax-container.hero-banner .card-content {
-    padding-bottom: 0!important;
-}
-
 .carousel .carousel-item {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .carousel .carousel-item .card-action .row {
-    margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 .carousel .carousel-item .card-action i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-.carousel .carousel-item .card-action i, .carousel .carousel-item .card-action b {
-    vertical-align: middle;
+.carousel .carousel-item .card-action i,
+.carousel .carousel-item .card-action b {
+  vertical-align: middle;
 }
 
 .carousel .carousel-item .progress {
-    height: 10px;
+  height: 10px;
 }
 
 .carousel .indicators .indicator-item {
-    background-color: rgba(0, 150, 136, .5);
+  background-color: rgba(0, 150, 136, 0.5);
 }
 
 .carousel .indicators .indicator-item.active {
-    background-color: #009688;
+  background-color: #009688;
 }
 
 .progress-section .progress {
-    height: 30px;
-    margin-top: 0!important;
+  height: 30px;
+  margin-top: 0 !important;
 }
 
 .progress-section .progress span {
-    color: white;
-    line-height: 28px;
-    padding-left: 20px;
+  color: white;
+  line-height: 28px;
+  padding-left: 20px;
 }
 
+/* 
+//==============================================================================================================================================================================================================================================================================================================================
+//                                                                                                                                                                                                                                                                                                                              
+//  #####     ###    #####      ###    ##        ###    ##    ##                                                                                                                                                                                                                                                              
+//  ##  ##   ## ##   ##  ##    ## ##   ##       ## ##    ##  ##                                                                                                                                                                                                                                                               
+//  #####   ##   ##  #####    ##   ##  ##      ##   ##    ####                                                                                                                                                                                                                                                                
+//  ##      #######  ##  ##   #######  ##      #######   ##  ##                                                                                                                                                                                                                                                               
+//  ##      ##   ##  ##   ##  ##   ##  ######  ##   ##  ##    ##                                                                                                                                                                                                                                                              
+//                                                                                                                                                                                                                                                                                                                              
+//==============================================================================================================================================================================================================================================================================================================================
+ */
+
+.imgIndexParalax {
+  top: -750px;
+}
+
+.imgconnexionParalax {
+    top: -1050px;
+  }
+
+  .imgInscripParalax {
+    top: -1350px;
+  }
+  .imgInscrip2Paralax {
+    top: -840px;
+  }
+  
+
+.parallax-container.hero-banner {
+  min-height: 480px;
+}
+
+.participe .card-content,
+.parallax-container.hero-banner .card-content {
+  padding-bottom: 0 !important;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    top: 30%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
 
 /* 
 //=================================================================================================================================================================================================================================================================================================
@@ -156,14 +176,13 @@ p {
 //=================================================================================================================================================================================================================================================================================================
  */
 
- .pushItDown{
-     margin-bottom : 50px;
- }
+.pushItDown {
+  margin-bottom: 50px;
+}
 
-
- .card-boutique{
-     margin-left: 20px!important;
- }
+.card-boutique {
+  margin-left: 20px !important;
+}
 
 /* 
  //=====================================================================================================================================================================================================================================================================================================
@@ -177,17 +196,16 @@ p {
 //=====================================================================================================================================================================================================================================================================================================
  */
 
-.dropdown-content li>span
-{
-    color : #002773;
+.dropdown-content li > span {
+  color: #002773;
 }
-.card-new-user{
-    opacity: 0.8;
-    padding-bottom: 10px;
+.card-new-user {
+  opacity: 0.8;
+  padding-bottom: 10px;
 }
 
 .form-error {
-    color : red;
+  color: red;
 }
 /* 
 //=================================================================================================================================================================================================================================================================================================================
@@ -201,20 +219,21 @@ p {
 //=================================================================================================================================================================================================================================================================================================================
  */
 
- nav ul a, nav .brand-logo {
-    color: #444;
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
 
 .navbar-fixed {
-    z-index: 999;
+  z-index: 999;
 }
 .sidenav-trigger {
-    color: #002773;
+  color: #002773;
 }
- #logo{
-     position: absolute;
-     height: 100%;
- }
+#logo {
+  position: absolute;
+  height: 100%;
+}
 /* 
  //=================================================================================================================================================================================================================================================================================================================
 //                                                                                                                                                                                                                                                                                                                 
@@ -227,17 +246,16 @@ p {
 //=================================================================================================================================================================================================================================================================================================================
  */
 
- footer.page-footer {
-    margin: 0;
+footer.page-footer {
+  margin: 0;
 }
 
 footer.page-footer .footer-links {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
-
 .footer-bg {
-    background-color: #002773;
+  background-color: #002773;
 }
 /* 
  //=====================================================================================================================================================================================================================================================================================================================
@@ -251,22 +269,20 @@ footer.page-footer .footer-links {
 //=====================================================================================================================================================================================================================================================================================================================
  */
 
-
- 
 .btn-primary {
-    background-color: #002773!important;
+  background-color: #002773 !important;
 }
 
 .btn-primary:hover {
-    background-color: #002673c9!important;
+  background-color: #002673c9 !important;
 }
 
 .btn-primary:active {
-    background-color: #002673c9!important;
+  background-color: #002673c9 !important;
 }
 
 @media only screen and (max-width: 992px) {
-    body .card .card-content .btn-large {
-        margin-bottom: 20px;
-    }
+  body .card .card-content .btn-large {
+    margin-bottom: 20px;
+  }
 }
