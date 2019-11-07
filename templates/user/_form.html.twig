@@ -2,8 +2,8 @@
 <div class="row">
 
     <div class="input-field col s12 l12">
-        {{ form_widget(form.pseudo, {'value' : pseudo }) }}
-        {{ form_label(form.pseudo, 'Nom de compte') }}
+        {{ form_widget(form.pseudo)}}
+        {{ form_label(form.pseudo, 'Pseudo') }}
         <span class='form-error'>{{ form_errors(form.pseudo) }}
         </span>
     </div>

@@ -60,7 +60,7 @@ class User implements UserInterface
     private $nbHeures;
 
     /**
-     * @ORM\Column(type="json")
+     * @ORM\Column(type="json_array")
      */
     private $roles = [
         "ROLE_USER",
@@ -200,6 +200,7 @@ class User implements UserInterface
 
         return $this;
     }
+
     public function getUsername()
     {
         return $this->pseudo;
