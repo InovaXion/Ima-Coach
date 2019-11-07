@@ -24,7 +24,6 @@ class UserType extends AbstractType
                 'second_options' => ['label' => 'Répéter mot de passe'],
             ])
             ->add('email', EmailType::class)
-            ->add('age')
             ->add('rang1v1', ChoiceType::class, [
                 'choices' => [
                     'Unranked' => [

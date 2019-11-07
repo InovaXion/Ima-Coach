@@ -18,7 +18,6 @@
                             <tr>
                                 <th>Pseudo</th>
                                 <th>Email</th>
-                                <th>Age</th>
                                 <th>actions</th>
                             </tr>
                         </thead>
@@ -27,7 +26,6 @@
                                 <tr>
                                     <td>{{ user.pseudo }}</td>
                                     <td>{{ user.email }}</td>
-                                    <td>{{ user.age }}</td>
                                     <td>
                                         <a href="{{ path('user_show', {'id': user.id}) }}">Voir</a>
                                     </td>
