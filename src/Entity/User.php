@@ -32,10 +32,7 @@ class User implements UserInterface
      */
     private $email;
 
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $age;
+  
 
     /**
      * @ORM\Column(type="string", length=50, nullable=true)
@@ -61,6 +58,13 @@ class User implements UserInterface
      * @ORM\Column(type="integer", nullable=true)
      */
     private $nbHeures;
+
+    /**
+     * @ORM\Column(type="json_array")
+     */
+    private $roles = [
+        "ROLE_USER",
+    ];
     
     // TO DO //
     // Ajoutez les roles, terminer le bundle security !! // 
@@ -107,17 +111,6 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getAge(): ?int
-    {
-        return $this->age;
-    }
-
-    public function setAge(?int $age): self
-    {
-        $this->age = $age;
-
-        return $this;
-    }
 
     public function getRang1v1(): ?string
     {
@@ -207,6 +200,7 @@ class User implements UserInterface
 
         return $this;
     }
+
     public function getUsername()
     {
         return $this->pseudo;

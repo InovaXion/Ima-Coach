@@ -10,11 +10,11 @@
         <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-           <link rel="stylesheet" href="{{ asset('../public/assets/css/materialize.min.css') }}">
+           <link rel="stylesheet" href="{{ asset('../public/assets/css/materializeCustomColor.min.css') }}">
            <link rel="stylesheet" href="{{ asset('../public/assets/css/styles.css') }}">
 
         <title>
-            {% block title %}Cagnot'potes
+            {% block title %}Coaching Rocket-League Ima-Coach
             {% endblock %}
         </title>
         {% block stylesheets %}{% endblock %}
@@ -32,7 +32,7 @@
                             <a class="waves-effect waves-light btn btn-primary lighten-1" href="{{ path('user_new') }}">Inscription</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="#">Connexion</a>
+                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="{{ path('app_login')}}">Connexion</a>
                         </li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
@@ -46,10 +46,10 @@
 
                     <ul class="sidenav" id="nav-mobile">
                         <li>
-                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="#">Inscription</a>
+                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="{{ path('user_new') }}">Inscription</a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="#">Connexion</a>
+                            <a class="waves-effect waves-light btn btn-primary lighten-1" href="{{ path('app_login')}}">Connexion</a>
                         </li>
                         <li>
                             <a class="waves-effect waves-light btn btn-primary lighten-1" href="#">Boutique</a>

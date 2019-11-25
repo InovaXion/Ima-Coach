@@ -2,8 +2,8 @@
 <div class="row">
 
     <div class="input-field col s12 l12">
-        {{ form_widget(form.pseudo, {'value' : pseudo }) }}
-        {{ form_label(form.pseudo) }}
+        {{ form_widget(form.pseudo)}}
+        {{ form_label(form.pseudo, 'Pseudo') }}
         <span class='form-error'>{{ form_errors(form.pseudo) }}
         </span>
     </div>
@@ -24,49 +24,36 @@
         {{ form_label(form.email) }}
         <span class='form-error'>{{ form_errors(form.email) }}
         </span>
-
-    </div>
-    <div class="input-field col s12 l12">
-        {{ form_widget(form.age) }}
-        {{ form_label(form.age) }}
-        <span class='form-error'>{{ form_errors(form.age) }}
-        </span>
-
     </div>
     <div class="input-field col s12 l6">
         {{ form_widget(form.rang1v1) }}
         {{ form_label(form.rang1v1) }}
         <span class='form-error'>{{ form_errors(form.rang1v1) }}
         </span>
-
     </div>
     <div class="input-field col s12 l6">
         {{ form_widget(form.rang2v2) }}
         {{ form_label(form.rang2v2) }}
         <span class='form-error'>{{ form_errors(form.rang2v2) }}
         </span>
-
     </div>
     <div class="input-field col s12 l6">
         {{ form_widget(form.rang3v3solo) }}
         {{ form_label(form.rang3v3solo) }}
         <span class='form-error'>{{ form_errors(form.rang3v3solo) }}
         </span>
-
     </div>
     <div class="input-field col s12 l6">
         {{ form_widget(form.rang3v3team) }}
         {{ form_label(form.rang3v3team) }}
         <span class='form-error'>{{ form_errors(form.rang3v3team) }}
         </span>
-
     </div>
     <div class="input-field col s12 l12">
         {{ form_widget(form.nbHeures) }}
         {{ form_label(form.nbHeures) }}
         <span class='form-error'>{{ form_errors(form.nbHeures) }}
         </span>
-
     </div>
 </div>
 
