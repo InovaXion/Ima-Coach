@@ -1,11 +1,6 @@
-/* Custom Stylesheet */
-
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+:root {
+  --primary : #002773;
+}
 
 p {
   line-height: 2rem;
@@ -22,7 +17,7 @@ p {
 }
 
 .primary {
-  color: #002773 !important;
+  color: var(--primary) !important;
 }
 
 .black-text {
@@ -33,7 +28,7 @@ p {
 .icon-rank {
   width: 45px;
   border: solid 1px black;
-  background-color: #002773;
+  background-color: var(--primary);
   position: absolute;
   left: 15px;
   top: 5px;
@@ -42,7 +37,7 @@ p {
 .icon-rank2 {
   width: 45px;
   border: solid 1px black;
-  background-color: #002773;
+  background-color: var(--primary);
   position: absolute;
 }
 
@@ -197,7 +192,7 @@ p {
  */
 
 .dropdown-content li > span {
-  color: #002773;
+  color: var(--primary);
 }
 .card-new-user {
   opacity: 0.8;
@@ -228,7 +223,7 @@ nav .brand-logo {
   z-index: 999;
 }
 .sidenav-trigger {
-  color: #002773;
+  color: var(--primary);
 }
 #logo {
   position: absolute;
@@ -255,7 +250,7 @@ footer.page-footer .footer-links {
 }
 
 .footer-bg {
-  background-color: #002773;
+  background-color: var(--primary);
 }
 /* 
  //=====================================================================================================================================================================================================================================================================================================================
@@ -270,7 +265,7 @@ footer.page-footer .footer-links {
  */
 
 .btn-primary {
-  background-color: #002773 !important;
+  background-color: var(--primary) !important;
 }
 
 .btn-primary:hover {

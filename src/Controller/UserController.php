@@ -30,7 +30,7 @@ class UserController extends AbstractController
     /**
      * @Route("/new", name="user_new", methods={"GET","POST"})
      */
-    public function new(Request $request, UserPasswordEncoderInterface $encoder): Response
+    public function newUser(Request $request, UserPasswordEncoderInterface $encoder): Response
     {
 
         if ($request->get('pseudo')) {
